@@ -1,4 +1,9 @@
 package ut;
+
+import java.io.IOException;
+import java.lang.Exception;
+import java.rmi.activation.ActivationException;
+
 import ut.TestClass2;
 
 public class TestClass1 {
@@ -8,6 +13,10 @@ public class TestClass1 {
 	TestClass2 testObject3 = new TestClass2();
 	
 	public TestClass1() {
-		//int testInt = 4;
+
+	}
+	
+	static final void testMethod1(int index, boolean bool, String value) throws IOException, ActivationException{
+		
 	}
 }
