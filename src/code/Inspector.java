@@ -10,6 +10,7 @@ public class Inspector {
 		recurseMap.put(classObject, classObject.hashCode());
 		displayClassIterInfo(classObject);
 		displayClassMethodInfo(classObject);
+		displayClassConstructorInfo(classObject);
 		
 		if (recursive == true){
 			recurseOnFieldObjects(classObject, recursive, recurseMap);
@@ -36,7 +37,7 @@ public class Inspector {
 	
 	public void displayClassMethodInfo(Class<?> currObject) {
 		Method [] methods = currObject.getDeclaredMethods();
-		System.out.println("Methods: ");
+		System.out.println("***Methods***");
 		System.out.println();
 		for (int i = 0; i < methods.length; i++) {
 			String methodName = methods[i].getName();
@@ -47,7 +48,7 @@ public class Inspector {
 			}
 			Class<?> [] parameters = methods[i].getParameterTypes();
 			String [] parameterNames = new String[parameters.length];
-			for (int k = 0; k < exceptionNames.length; k++) {
+			for (int k = 0; k < parameterNames.length; k++) {
 				parameterNames[k] = parameters[k].getName();
 			}
 			String returnTypeName = methods[i].getReturnType().getName();
@@ -68,6 +69,26 @@ public class Inspector {
 		}
 		System.out.println();
 	}
+	
+	public void displayClassConstructorInfo(Class <?> currObject) {
+		Constructor <?> [] constructors = currObject.getConstructors();
+		String [] constructorNames = new String [constructors.length];
+		System.out.println("***Constructors***");
+		System.out.println();
+		for (int i = 0; i < constructors.length; i++) {
+			constructorNames[i] = constructors[i].getName();
+			Class<?> [] parameters = constructors[i].getParameterTypes();
+			String [] parameterNames = new String[parameters.length];
+			String modifiers = Modifier.toString(constructors[i].getModifiers());
+			System.out.println("Parameter Types: ");
+			for (int k = 0; k < parameterNames.length; k++){
+				System.out.println(parameterNames[k]);
+			}
+			System.out.println("Modifiers: " + modifiers);
+		}
+		System.out.println();
+	}
+	
 	public void recurseOnFieldObjects(Class<?> currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {	
 		Field [] fields = currObject.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
