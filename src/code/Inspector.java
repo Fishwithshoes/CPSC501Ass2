@@ -11,6 +11,7 @@ public class Inspector {
 		displayClassIterInfo(classObject);
 		displayClassMethodInfo(classObject);
 		displayClassConstructorInfo(classObject);
+		displayClassFieldInfo(classObject);
 		
 		if (recursive == true){
 			recurseOnFieldObjects(classObject, recursive, recurseMap);
@@ -91,11 +92,41 @@ public class Inspector {
 	
 	public void displayClassFieldInfo(Class<?> currObject) {
 		Field [] fields = currObject.getDeclaredFields();
+		System.out.println("***Fields***");
+		System.out.println();
 		for (int i = 0; i < fields.length; i++) {
 			String fieldName = fields[i].getType().getName();
 			String modifiers = Modifier.toString(fields[i].getModifiers());
+			String value = getFieldValue(fields[i], currObject);
+			
+			System.out.println("Field Type: " + fieldName);
+			System.out.println("Field Modifiers: " + modifiers);
+			System.out.println("Field Value: " + value);
+		}
+		System.out.println();
+	}
+	
+	public String getFieldValue(Field currField, Class<?> currObject) {
+		String valueString = new String();
+		Class <?> fieldClass = currField.getType();
+		try {
+			Object fieldValue = currField.get(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (fieldClass.isPrimitive() == true) {
 			try {
-				Object value = fields[i].get(currObject);
+				if (fieldClass == Class.forName("Integer")) {
+					valueString = Integer.toString(currField.getInt(currObject));
+				}
+				
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			} catch (IllegalArgumentException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -103,8 +134,10 @@ public class Inspector {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		}
+		
+		
+		return valueString;
 	}
 	
 	public void recurseOnFieldObjects(Class<?> currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {	
@@ -112,10 +145,10 @@ public class Inspector {
 		for (int i = 0; i < fields.length; i++) {
 			Class<?> currType = fields[i].getType();
 			if (currType.isPrimitive() == true){
-				System.out.println("is Prim");
+				//System.out.println("is Prim");
 			}
 			else if (currType.isArray() == true){
-				System.out.println("is Arr");
+				//System.out.println("is Arr");
 			}
 			else {
 				try {

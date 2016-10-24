@@ -11,6 +11,7 @@ public class TestClass1 {
 	TestClass2 testObject1 = new TestClass2();
 	TestClass2 testObject2 = new TestClass2();
 	TestClass2 testObject3 = new TestClass2();
+	private int testIndex1 = 4;
 	
 	public TestClass1() {
 
