@@ -89,6 +89,24 @@ public class Inspector {
 		System.out.println();
 	}
 	
+	public void displayClassFieldInfo(Class<?> currObject) {
+		Field [] fields = currObject.getDeclaredFields();
+		for (int i = 0; i < fields.length; i++) {
+			String fieldName = fields[i].getType().getName();
+			String modifiers = Modifier.toString(fields[i].getModifiers());
+			try {
+				Object value = fields[i].get(currObject);
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+	}
+	
 	public void recurseOnFieldObjects(Class<?> currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {	
 		Field [] fields = currObject.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
