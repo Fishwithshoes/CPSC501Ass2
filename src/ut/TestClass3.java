@@ -1,7 +1,8 @@
 package ut;
 
 public class TestClass3 {
-	private int testIndex3 = 6;
+	private static volatile int testIndex3 = 6;
+	volatile double testDouble1 = 5.56;
 	public TestClass3(){
 		
 	}

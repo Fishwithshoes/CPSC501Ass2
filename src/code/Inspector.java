@@ -11,8 +11,7 @@ public class Inspector {
 		displayClassIterInfo(classObject);
 		displayClassMethodInfo(classObject);
 		displayClassConstructorInfo(classObject);
-		displayClassFieldInfo(classObject);
-		
+		displayClassFieldInfo(classObject, obj);
 		if (recursive == true){
 			recurseOnFieldObjects(classObject, recursive, recurseMap);
 		}		
@@ -90,23 +89,233 @@ public class Inspector {
 		System.out.println();
 	}
 	
-	public void displayClassFieldInfo(Class<?> currObject) {
-		Field [] fields = currObject.getDeclaredFields();
+	/*public void displayClassFieldInfo(Class<?> currClass, Object currObject) {
+		Field [] fields = currClass.getDeclaredFields();
+		int fieldInt = new Integer(-1);
+		try {
+			fields[0].setAccessible(true);
+			fieldInt = fields[0].getInt(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Int value: " + Integer.toString(fieldInt));
+	}*/
+	
+	public void displayClassFieldInfo(Class<?> currClass, Object currObject) {
+		Field [] fields = currClass.getDeclaredFields();
 		System.out.println("***Fields***");
 		System.out.println();
 		for (int i = 0; i < fields.length; i++) {
-			String fieldName = fields[i].getType().getName();
+			Class <?> fieldType = fields[i].getType();
+			String fieldTypeString = fieldType.getName();
 			String modifiers = Modifier.toString(fields[i].getModifiers());
-			String value = getFieldValue(fields[i], currObject);
+			String valueString = new String();
+			if (fieldType.isPrimitive()) {
+				valueString = primitiveHandler(fields[i], currObject);
+			}
+			else if (fieldType.isArray()){
+				//some Array Handling
+			}
+			else if (fieldType.isEnum()) {
+				
+			}
+			else {
+				valueString = objectHandler(fields[i], currObject);
+			}
+
 			
-			System.out.println("Field Type: " + fieldName);
+			System.out.println("Field Type: " + fieldTypeString);
 			System.out.println("Field Modifiers: " + modifiers);
-			System.out.println("Field Value: " + value);
+			System.out.println("Field Value: " + valueString);
 		}
 		System.out.println();
 	}
 	
-	public String getFieldValue(Field currField, Class<?> currObject) {
+	public String primitiveHandler(Field currField, Object currObject) {
+		String resultString = new String();
+		Class <?> fieldType = currField.getType();
+		if (fieldType == Boolean.TYPE) {
+			resultString = boolHandler(currField, currObject);	
+		}
+		else if (fieldType == Character.TYPE) {
+			resultString = charHandler(currField, currObject);				
+		}
+		else if (fieldType == Byte.TYPE) {
+			resultString = byteHandler(currField, currObject);		
+		}
+		else if (fieldType == Short.TYPE) {
+			resultString = shortHandler(currField, currObject);			
+		}
+		else if (fieldType == Integer.TYPE) {
+			resultString = intHandler(currField, currObject);			
+		}
+		else if (fieldType == Long.TYPE) {
+			resultString = longHandler(currField, currObject);			
+		}
+		else if (fieldType == Float.TYPE) {
+			resultString = floatHandler(currField, currObject);
+		}
+		else if (fieldType == Double.TYPE) {
+			resultString = doubleHandler(currField, currObject);
+		}
+		else { //void
+			resultString = "";		
+		}
+
+		return resultString;
+		
+	}
+	
+	public String objectHandler(Field currField, Object currObject) {
+		String valueString = new String();
+		Object fieldObject = new Object();
+			try {
+				currField.setAccessible(true);
+				fieldObject = currField.get(currObject);
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		valueString = fieldObject.toString();
+		return valueString;
+	}
+	
+	public String boolHandler(Field currField, Object currObject) {
+		boolean returnValue = new Boolean(false);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getBoolean(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String boolString = Boolean.toString(returnValue);
+		return boolString;
+	}
+	
+	public String charHandler(Field currField, Object currObject) {
+		char returnValue = new Character('e');
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getChar(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String charString = Character.toString(returnValue);
+		return charString;
+	}
+	
+	public String byteHandler(Field currField, Object currObject) {
+		byte returnValue = new Byte((byte)0xff);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getByte(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String byteString = Byte.toString(returnValue);
+		return byteString;
+	}
+	
+	public String shortHandler(Field currField, Object currObject) {
+		short returnValue = new Short((short)-1);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getShort(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String shortString = Short.toString(returnValue);
+		return shortString;
+	}
+	
+	public String intHandler(Field currField, Object currObject) {
+		int returnValue = new Integer(-1);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getInt(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String intString = Integer.toString(returnValue);
+		return intString;
+	}
+	
+	public String longHandler(Field currField, Object currObject) {
+		long returnValue = new Long(-1);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getLong(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String longString = Long.toString(returnValue);
+		return longString;
+	}
+	
+	public String floatHandler(Field currField, Object currObject) {
+		float returnValue = new Float(-1.0);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getFloat(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String floatString = Float.toString(returnValue);
+		return floatString;
+	}
+	
+	public String doubleHandler(Field currField, Object currObject) {
+		double returnValue = new Double(-1.0);
+		currField.setAccessible(true);
+		try {
+			returnValue = currField.getDouble(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String doubleString = Double.toString(returnValue);
+		return doubleString;
+	}
+	
+	/*public String getFieldValue(Field currField, Class<?> currObject) {
 		currField.setAccessible(true);
 		String valueString = new String();
 		Class <?> fieldType = currField.getType();
@@ -114,7 +323,7 @@ public class Inspector {
 
 		if (fieldType.isPrimitive() == true) {
 			try {
-				fieldObject = currField.get(fieldObject);
+				fieldObject = currField.get(currOfieldObject);
 			} catch (IllegalArgumentException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -144,7 +353,7 @@ public class Inspector {
 			valueString = fieldObject.toString();
 		}
 		return valueString;
-	}
+	}*/
 	
 	public void recurseOnFieldObjects(Class<?> currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {	
 		Field [] fields = currObject.getDeclaredFields();

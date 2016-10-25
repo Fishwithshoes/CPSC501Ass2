@@ -8,10 +8,12 @@ import ut.TestClass2;
 
 public class TestClass1 {
 	
-	TestClass2 testObject1 = new TestClass2();
+	private int testIndex1 = 4;
+	final char testChar1 = 'b';
+	static float testFloat = 2.0f;
+	static TestClass2 testObject1 = new TestClass2();
 	TestClass2 testObject2 = new TestClass2();
 	TestClass2 testObject3 = new TestClass2();
-	private int testIndex1 = 4;
 	
 	public TestClass1() {
 
