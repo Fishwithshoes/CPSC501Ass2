@@ -107,26 +107,14 @@ public class Inspector {
 	}
 	
 	public String getFieldValue(Field currField, Class<?> currObject) {
+		currField.setAccessible(true);
 		String valueString = new String();
-		Class <?> fieldClass = currField.getType();
-		try {
-			Object fieldValue = currField.get(currObject);
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if (fieldClass.isPrimitive() == true) {
+		Class <?> fieldType = currField.getType();
+		Object fieldObject = new Object();
+
+		if (fieldType.isPrimitive() == true) {
 			try {
-				if (fieldClass == Class.forName("Integer")) {
-					valueString = Integer.toString(currField.getInt(currObject));
-				}
-				
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				fieldObject = currField.get(fieldObject);
 			} catch (IllegalArgumentException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -134,9 +122,27 @@ public class Inspector {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
+			
 		}
-		
-		
+		else if (fieldType.isArray() == true) {
+			
+		}
+		else if (fieldType.isEnum() == true){
+			
+		}
+		else {												//is object
+			try {
+				fieldObject = fieldType.newInstance();
+			} catch (InstantiationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			valueString = fieldObject.toString();
+		}
 		return valueString;
 	}
 	
