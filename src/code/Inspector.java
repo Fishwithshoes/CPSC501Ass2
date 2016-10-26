@@ -13,7 +13,7 @@ public class Inspector {
 		displayClassConstructorInfo(classObject);
 		displayClassFieldInfo(classObject, obj);
 		if (recursive == true){
-			recurseOnFieldObjects(classObject, recursive, recurseMap);
+			recurseOnFieldObjects(obj, recursive, recurseMap);
 		}		
 	}
 	
@@ -359,25 +359,46 @@ public class Inspector {
 		return valueString;
 	}*/
 	
-	public void recurseOnFieldObjects(Class<?> currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {	
-		Field [] fields = currObject.getDeclaredFields();
+	public void recurseOnFieldObjects(Object currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {
+		Class <?> currClass = currObject.getClass();
+		Object newObject = new Object();
+		Field [] fields = currClass.getDeclaredFields();
 		for (int i = 0; i < fields.length; i++) {
+			fields[i].setAccessible(true);
 			Class<?> currType = fields[i].getType();
 			if (currType.isPrimitive() == true){
 				//System.out.println("is Prim");
 			}
 			else if (currType.isArray() == true){
-				//System.out.println("is Arr");
+				Object arrayObject = new Object();
+				try {
+					arrayObject = fields[i].get(currObject);
+					if (arrayObject != null) {
+						for (int j = 0; j < Array.getLength(arrayObject); j++) {
+							newObject = Array.get(arrayObject, j);
+							if (newObject != null && newObject.getClass().isPrimitive() == false) {
+								if (currMap.containsKey(newObject.getClass()) == false){
+									inspect(newObject, recursive);
+							}
+						}
+					}
+				}
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			else if (currType.isEnum() == true) {
+				
 			}
 			else {
 				try {
-					Object newObject = currType.newInstance();
-					if (currMap.containsKey(newObject.getClass()) == false){
-						inspect(newObject, recursive);
+					newObject = fields[i].get(currObject);
+					if (newObject != null) {
+						if (currMap.containsKey(newObject.getClass()) == false){
+							inspect(newObject, recursive);
+						}
 					}
-				} catch (InstantiationException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				} catch (IllegalAccessException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
