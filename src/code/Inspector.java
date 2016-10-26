@@ -172,18 +172,22 @@ public class Inspector {
 	
 	public String objectHandler(Field currField, Object currObject) {
 		String valueString = new String();
-		Object fieldObject = new Object();
-			try {
-				currField.setAccessible(true);
-				fieldObject = currField.get(currObject);
-			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		valueString = fieldObject.toString();
+		Object fieldObject = new Object();	
+		try {
+			currField.setAccessible(true);
+			fieldObject = currField.get(currObject);
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (fieldObject == null)
+			return null;
+		else
+			valueString = fieldObject.toString();
+		
 		return valueString;
 	}
 	
