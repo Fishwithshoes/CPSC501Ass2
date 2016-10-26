@@ -12,14 +12,17 @@ public class Inspector {
 		displayClassMethodInfo(classObject);
 		displayClassConstructorInfo(classObject);
 		displayClassFieldInfo(classObject, obj);
+		displaySuperClass(obj, classObject, recurseMap);
 		if (recursive == true){
 			recurseOnFieldObjects(obj, recursive, recurseMap);
-		}		
+		}
 	}
 	
 	public void displayClassIterInfo(Class<?> currObject){
 		String className = currObject.getName();
-		String superClassName = currObject.getSuperclass().getName();
+		String superClassName = null;
+		if (currObject.getSuperclass() != null)
+			superClassName = currObject.getSuperclass().getName();
 		Class <?> [] interfaces = currObject.getInterfaces();
 		String [] interfaceNames = new String[interfaces.length];
 			for (int i = 0; i < interfaces.length; i++) {
@@ -358,6 +361,18 @@ public class Inspector {
 		}
 		return valueString;
 	}*/
+	
+	public void displaySuperClass(Object currObject, Class<?> currClass, HashMap<Class<?>, Integer> currMap) {
+		Class <?> superClass = currClass.getSuperclass();
+		while (superClass != null && currMap.containsKey(superClass) == false) {
+			recurseMap.put(superClass, superClass.hashCode());
+			displayClassIterInfo(superClass);
+			displayClassMethodInfo(superClass);
+			displayClassConstructorInfo(superClass);
+			displayClassFieldInfo(superClass, currObject);
+			displaySuperClass(currObject, superClass, recurseMap);
+		}
+	}
 	
 	public void recurseOnFieldObjects(Object currObject, boolean recursive, HashMap<Class<?>, Integer> currMap) {
 		Class <?> currClass = currObject.getClass();
