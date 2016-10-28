@@ -35,11 +35,11 @@ public class TestInspector {
 	//of each display method against a ByteArrayOutputStream, but was unsuccessful in getting proper
 	assertions*/
 	
-	/*@Test
+	@Test
 	public void testInspect() {
 		TestClass1 testObject = new TestClass1();
 		testInspector.inspect(testObject, true);
-	}*/
+	}
 	
 	/*NOTE: The following test both the primitiveHander switch method, and each String handler method 
 	per type*/

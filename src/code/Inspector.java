@@ -68,9 +68,8 @@ public class Inspector {
 			}
 			System.out.println("Return Type: " + returnTypeName);
 			System.out.println("Modifiers: " + modifiers);
-			
+			System.out.println();
 		}
-		System.out.println();
 	}
 	
 	public void displayClassConstructorInfo(Class <?> currObject) {
@@ -88,8 +87,8 @@ public class Inspector {
 				System.out.println(parameterNames[k]);
 			}
 			System.out.println("Modifiers: " + modifiers);
+			System.out.println();
 		}
-		System.out.println();
 	}
 	
 	public void displayClassFieldInfo(Class<?> currClass, Object currObject) {
@@ -144,8 +143,8 @@ public class Inspector {
 				System.out.println("Array Field Length: " + Integer.toString(arrayFieldLength));
 			}
 			System.out.println("Field Value: " + valueString);
+			System.out.println();
 		}
-		System.out.println();
 	}
 	
 	public String primitiveHandler(Field currField, Object currObject) {
