@@ -1,0 +1,3109 @@
+******NEW CLASS******
+Class: ut.TestClass1
+Direct Superclass: java.lang.Object
+Interfaces:
+
+***Methods***
+
+Method Name: testMethod1
+Exceptions: 
+java.io.IOException
+java.rmi.activation.ActivationException
+Parameter Types: 
+int
+boolean
+java.lang.String
+Return Type: void
+Modifiers: static final
+
+***Constructors***
+
+Parameter Types: 
+Modifiers: public
+
+***Fields***
+
+Field Name: testIndex1
+Field Type: int
+Field Modifiers: private
+Field Value: 4
+Field Name: testChar1
+Field Type: char
+Field Modifiers: final
+Field Value: b
+Field Name: testFloat
+Field Type: float
+Field Modifiers: static
+Field Value: 2.0
+Field Name: testObject3
+Field Type: ut.TestClass4
+Field Modifiers: 
+Field Value: ut.TestClass4@255316f2
+Field Name: testObject4
+Field Type: ut.TestClass4
+Field Modifiers: 
+Field Value: ut.TestClass4@41906a77
+Field Name: testClassArray1
+Field Type: [Lut.TestClass4;
+Field Modifiers: private
+Array Field Component Type: class ut.TestClass4
+Array Field Length: 2
+Field Value: null ut.TestClass4@41906a77 
+Field Name: testStringArray1
+Field Type: [Ljava.lang.String;
+Field Modifiers: private
+Array Field Component Type: class java.lang.String
+Array Field Length: 2
+Field Value: shoop deboop 
+
+******NEW CLASS******
+Class: java.lang.Object
+Direct Superclass: null
+Interfaces:
+
+***Methods***
+
+Method Name: finalize
+Exceptions: 
+java.lang.Throwable
+Parameter Types: 
+Return Type: void
+Modifiers: protected
+Method Name: wait
+Exceptions: 
+java.lang.InterruptedException
+Parameter Types: 
+Return Type: void
+Modifiers: public final
+Method Name: wait
+Exceptions: 
+java.lang.InterruptedException
+Parameter Types: 
+long
+int
+Return Type: void
+Modifiers: public final
+Method Name: wait
+Exceptions: 
+java.lang.InterruptedException
+Parameter Types: 
+long
+Return Type: void
+Modifiers: public final native
+Method Name: equals
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public native
+Method Name: getClass
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: public final native
+Method Name: clone
+Exceptions: 
+java.lang.CloneNotSupportedException
+Parameter Types: 
+Return Type: java.lang.Object
+Modifiers: protected native
+Method Name: notify
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: public final native
+Method Name: notifyAll
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: public final native
+Method Name: registerNatives
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: private static native
+
+***Constructors***
+
+Parameter Types: 
+Modifiers: public
+
+***Fields***
+
+
+******NEW CLASS******
+Class: ut.TestClass4
+Direct Superclass: ut.TestClass3
+Interfaces:
+
+***Methods***
+
+
+***Constructors***
+
+Parameter Types: 
+Modifiers: public
+
+***Fields***
+
+Field Name: testIndex4
+Field Type: int
+Field Modifiers: public
+Field Value: 10
+Field Name: testLong1
+Field Type: long
+Field Modifiers: private
+Field Value: 344
+
+******NEW CLASS******
+Class: ut.TestClass3
+Direct Superclass: java.lang.Object
+Interfaces:
+
+***Methods***
+
+
+***Constructors***
+
+Parameter Types: 
+Modifiers: public
+
+***Fields***
+
+Field Name: testIndex3
+Field Type: int
+Field Modifiers: private static volatile
+Field Value: 6
+Field Name: testDouble1
+Field Type: double
+Field Modifiers: volatile
+Field Value: 5.56
+
+******NEW CLASS******
+Class: java.lang.String
+Direct Superclass: java.lang.Object
+Interfaces:
+java.io.Serializable
+java.lang.Comparable
+java.lang.CharSequence
+
+***Methods***
+
+Method Name: equals
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public
+Method Name: compareTo
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: int
+Modifiers: public
+Method Name: compareTo
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: int
+Modifiers: public volatile
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+java.lang.String
+int
+Return Type: int
+Modifiers: public
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: int
+Modifiers: public
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+[C
+int
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: indexOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+java.lang.String
+int
+Return Type: int
+Modifiers: static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+long
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+float
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+[C
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+char
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+double
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: charAt
+Exceptions: 
+Parameter Types: 
+int
+Return Type: char
+Modifiers: public
+Method Name: checkBounds
+Exceptions: 
+Parameter Types: 
+[B
+int
+int
+Return Type: void
+Modifiers: private static
+Method Name: codePointAt
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+Method Name: codePointBefore
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+Method Name: codePointCount
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+Method Name: compareToIgnoreCase
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: int
+Modifiers: public
+Method Name: concat
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+Method Name: contains
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+Return Type: boolean
+Modifiers: public
+Method Name: contentEquals
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+Return Type: boolean
+Modifiers: public
+Method Name: contentEquals
+Exceptions: 
+Parameter Types: 
+java.lang.StringBuffer
+Return Type: boolean
+Modifiers: public
+Method Name: copyValueOf
+Exceptions: 
+Parameter Types: 
+[C
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: copyValueOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: endsWith
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: boolean
+Modifiers: public
+Method Name: equalsIgnoreCase
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: boolean
+Modifiers: public
+Method Name: format
+Exceptions: 
+Parameter Types: 
+java.util.Locale
+java.lang.String
+[Ljava.lang.Object;
+Return Type: java.lang.String
+Modifiers: public static transient
+Method Name: format
+Exceptions: 
+Parameter Types: 
+java.lang.String
+[Ljava.lang.Object;
+Return Type: java.lang.String
+Modifiers: public static transient
+Method Name: getBytes
+Exceptions: 
+Parameter Types: 
+int
+int
+[B
+int
+Return Type: void
+Modifiers: public
+Method Name: getBytes
+Exceptions: 
+Parameter Types: 
+java.nio.charset.Charset
+Return Type: [B
+Modifiers: public
+Method Name: getBytes
+Exceptions: 
+java.io.UnsupportedEncodingException
+Parameter Types: 
+java.lang.String
+Return Type: [B
+Modifiers: public
+Method Name: getBytes
+Exceptions: 
+Parameter Types: 
+Return Type: [B
+Modifiers: public
+Method Name: getChars
+Exceptions: 
+Parameter Types: 
+int
+int
+[C
+int
+Return Type: void
+Modifiers: public
+Method Name: getChars
+Exceptions: 
+Parameter Types: 
+[C
+int
+Return Type: void
+Modifiers: 
+Method Name: indexOfSupplementary
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: private
+Method Name: intern
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public native
+Method Name: isEmpty
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: join
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+[Ljava.lang.CharSequence;
+Return Type: java.lang.String
+Modifiers: public static transient
+Method Name: join
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+java.lang.Iterable
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: int
+Modifiers: public
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+java.lang.String
+int
+Return Type: int
+Modifiers: static
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+java.lang.String
+int
+Return Type: int
+Modifiers: public
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+Method Name: lastIndexOf
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+[C
+int
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: lastIndexOfSupplementary
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: private
+Method Name: length
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public
+Method Name: matches
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: boolean
+Modifiers: public
+Method Name: nonSyncContentEquals
+Exceptions: 
+Parameter Types: 
+java.lang.AbstractStringBuilder
+Return Type: boolean
+Modifiers: private
+Method Name: offsetByCodePoints
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+Method Name: regionMatches
+Exceptions: 
+Parameter Types: 
+int
+java.lang.String
+int
+int
+Return Type: boolean
+Modifiers: public
+Method Name: regionMatches
+Exceptions: 
+Parameter Types: 
+boolean
+int
+java.lang.String
+int
+int
+Return Type: boolean
+Modifiers: public
+Method Name: replace
+Exceptions: 
+Parameter Types: 
+char
+char
+Return Type: java.lang.String
+Modifiers: public
+Method Name: replace
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+java.lang.CharSequence
+Return Type: java.lang.String
+Modifiers: public
+Method Name: replaceAll
+Exceptions: 
+Parameter Types: 
+java.lang.String
+java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+Method Name: replaceFirst
+Exceptions: 
+Parameter Types: 
+java.lang.String
+java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+Method Name: split
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: [Ljava.lang.String;
+Modifiers: public
+Method Name: split
+Exceptions: 
+Parameter Types: 
+java.lang.String
+int
+Return Type: [Ljava.lang.String;
+Modifiers: public
+Method Name: startsWith
+Exceptions: 
+Parameter Types: 
+java.lang.String
+int
+Return Type: boolean
+Modifiers: public
+Method Name: startsWith
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: boolean
+Modifiers: public
+Method Name: subSequence
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: java.lang.CharSequence
+Modifiers: public
+Method Name: substring
+Exceptions: 
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public
+Method Name: substring
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: java.lang.String
+Modifiers: public
+Method Name: toCharArray
+Exceptions: 
+Parameter Types: 
+Return Type: [C
+Modifiers: public
+Method Name: toLowerCase
+Exceptions: 
+Parameter Types: 
+java.util.Locale
+Return Type: java.lang.String
+Modifiers: public
+Method Name: toLowerCase
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: toUpperCase
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: toUpperCase
+Exceptions: 
+Parameter Types: 
+java.util.Locale
+Return Type: java.lang.String
+Modifiers: public
+Method Name: trim
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+
+***Constructors***
+
+Parameter Types: 
+null
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+null
+Modifiers: public
+Parameter Types: 
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+null
+null
+Modifiers: public
+
+***Fields***
+
+Field Name: value
+Field Type: [C
+Field Modifiers: private final
+Array Field Component Type: char
+Array Field Length: 5
+Field Value: s h o o p 
+Field Name: hash
+Field Type: int
+Field Modifiers: private
+Field Value: 0
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: -6849794470754667710
+Field Name: serialPersistentFields
+Field Type: [Ljava.io.ObjectStreamField;
+Field Modifiers: private static final
+Array Field Component Type: class java.io.ObjectStreamField
+Array Field Length: 0
+Field Value: 
+Field Name: CASE_INSENSITIVE_ORDER
+Field Type: java.util.Comparator
+Field Modifiers: public static final
+Field Value: java.lang.String$CaseInsensitiveComparator@2cdf8d8a
+
+******NEW CLASS******
+Class: java.lang.Character
+Direct Superclass: java.lang.Object
+Interfaces:
+java.io.Serializable
+java.lang.Comparable
+
+***Methods***
+
+Method Name: isJavaIdentifierStart
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isJavaIdentifierStart
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isJavaIdentifierPart
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isJavaIdentifierPart
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: equals
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+char
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+char
+Return Type: int
+Modifiers: public static
+Method Name: reverseBytes
+Exceptions: 
+Parameter Types: 
+char
+Return Type: char
+Modifiers: public static
+Method Name: compareTo
+Exceptions: 
+Parameter Types: 
+java.lang.Character
+Return Type: int
+Modifiers: public
+Method Name: compareTo
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: int
+Modifiers: public volatile
+Method Name: charValue
+Exceptions: 
+Parameter Types: 
+Return Type: char
+Modifiers: public
+Method Name: valueOf
+Exceptions: 
+Parameter Types: 
+char
+Return Type: java.lang.Character
+Modifiers: public static
+Method Name: getName
+Exceptions: 
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public static
+Method Name: charCount
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointAt
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointAt
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointAt
+Exceptions: 
+Parameter Types: 
+[C
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointAtImpl
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: codePointBefore
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointBefore
+Exceptions: 
+Parameter Types: 
+[C
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointBefore
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointBeforeImpl
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: codePointCount
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointCount
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: codePointCountImpl
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: compare
+Exceptions: 
+Parameter Types: 
+char
+char
+Return Type: int
+Modifiers: public static
+Method Name: highSurrogate
+Exceptions: 
+Parameter Types: 
+int
+Return Type: char
+Modifiers: public static
+Method Name: isBmpCodePoint
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isValidCodePoint
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: lowSurrogate
+Exceptions: 
+Parameter Types: 
+int
+Return Type: char
+Modifiers: public static
+Method Name: offsetByCodePoints
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: offsetByCodePoints
+Exceptions: 
+Parameter Types: 
+java.lang.CharSequence
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: offsetByCodePointsImpl
+Exceptions: 
+Parameter Types: 
+[C
+int
+int
+int
+int
+Return Type: int
+Modifiers: static
+Method Name: toChars
+Exceptions: 
+Parameter Types: 
+int
+Return Type: [C
+Modifiers: public static
+Method Name: toChars
+Exceptions: 
+Parameter Types: 
+int
+[C
+int
+Return Type: int
+Modifiers: public static
+Method Name: toLowerCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+Method Name: toLowerCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: char
+Modifiers: public static
+Method Name: toSurrogates
+Exceptions: 
+Parameter Types: 
+int
+[C
+int
+Return Type: void
+Modifiers: static
+Method Name: toUpperCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+Method Name: toUpperCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: char
+Modifiers: public static
+Method Name: toUpperCaseCharArray
+Exceptions: 
+Parameter Types: 
+int
+Return Type: [C
+Modifiers: static
+Method Name: toUpperCaseEx
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: static
+Method Name: getType
+Exceptions: 
+Parameter Types: 
+char
+Return Type: int
+Modifiers: public static
+Method Name: getType
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+Method Name: isDigit
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isDigit
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isHighSurrogate
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLowSurrogate
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isSurrogate
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLetter
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLetter
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isLetterOrDigit
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLetterOrDigit
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: digit
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public static
+Method Name: digit
+Exceptions: 
+Parameter Types: 
+char
+int
+Return Type: int
+Modifiers: public static
+Method Name: forDigit
+Exceptions: 
+Parameter Types: 
+int
+int
+Return Type: char
+Modifiers: public static
+Method Name: getDirectionality
+Exceptions: 
+Parameter Types: 
+int
+Return Type: byte
+Modifiers: public static
+Method Name: getDirectionality
+Exceptions: 
+Parameter Types: 
+char
+Return Type: byte
+Modifiers: public static
+Method Name: getNumericValue
+Exceptions: 
+Parameter Types: 
+char
+Return Type: int
+Modifiers: public static
+Method Name: getNumericValue
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+Method Name: isAlphabetic
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isDefined
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isDefined
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isISOControl
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isISOControl
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isIdentifierIgnorable
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isIdentifierIgnorable
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isIdeographic
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isJavaLetter
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isJavaLetterOrDigit
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLowerCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isLowerCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isMirrored
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isMirrored
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isSpace
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isSpaceChar
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isSpaceChar
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isSupplementaryCodePoint
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isSurrogatePair
+Exceptions: 
+Parameter Types: 
+char
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isTitleCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isTitleCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isUnicodeIdentifierPart
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isUnicodeIdentifierPart
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isUnicodeIdentifierStart
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isUnicodeIdentifierStart
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isUpperCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: isUpperCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isWhitespace
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: public static
+Method Name: isWhitespace
+Exceptions: 
+Parameter Types: 
+int
+Return Type: boolean
+Modifiers: public static
+Method Name: toCodePoint
+Exceptions: 
+Parameter Types: 
+char
+char
+Return Type: int
+Modifiers: public static
+Method Name: toTitleCase
+Exceptions: 
+Parameter Types: 
+char
+Return Type: char
+Modifiers: public static
+Method Name: toTitleCase
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public static
+
+***Constructors***
+
+Parameter Types: 
+null
+Modifiers: public
+
+***Fields***
+
+Field Name: MIN_RADIX
+Field Type: int
+Field Modifiers: public static final
+Field Value: 2
+Field Name: MAX_RADIX
+Field Type: int
+Field Modifiers: public static final
+Field Value: 36
+Field Name: MIN_VALUE
+Field Type: char
+Field Modifiers: public static final
+Field Value:  
+Field Name: MAX_VALUE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: TYPE
+Field Type: java.lang.Class
+Field Modifiers: public static final
+Field Value: char
+Field Name: UNASSIGNED
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 0
+Field Name: UPPERCASE_LETTER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 1
+Field Name: LOWERCASE_LETTER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 2
+Field Name: TITLECASE_LETTER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 3
+Field Name: MODIFIER_LETTER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 4
+Field Name: OTHER_LETTER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 5
+Field Name: NON_SPACING_MARK
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 6
+Field Name: ENCLOSING_MARK
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 7
+Field Name: COMBINING_SPACING_MARK
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 8
+Field Name: DECIMAL_DIGIT_NUMBER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 9
+Field Name: LETTER_NUMBER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 10
+Field Name: OTHER_NUMBER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 11
+Field Name: SPACE_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 12
+Field Name: LINE_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 13
+Field Name: PARAGRAPH_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 14
+Field Name: CONTROL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 15
+Field Name: FORMAT
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 16
+Field Name: PRIVATE_USE
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 18
+Field Name: SURROGATE
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 19
+Field Name: DASH_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 20
+Field Name: START_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 21
+Field Name: END_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 22
+Field Name: CONNECTOR_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 23
+Field Name: OTHER_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 24
+Field Name: MATH_SYMBOL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 25
+Field Name: CURRENCY_SYMBOL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 26
+Field Name: MODIFIER_SYMBOL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 27
+Field Name: OTHER_SYMBOL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 28
+Field Name: INITIAL_QUOTE_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 29
+Field Name: FINAL_QUOTE_PUNCTUATION
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 30
+Field Name: ERROR
+Field Type: int
+Field Modifiers: static final
+Field Value: -1
+Field Name: DIRECTIONALITY_UNDEFINED
+Field Type: byte
+Field Modifiers: public static final
+Field Value: -1
+Field Name: DIRECTIONALITY_LEFT_TO_RIGHT
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 0
+Field Name: DIRECTIONALITY_RIGHT_TO_LEFT
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 1
+Field Name: DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 2
+Field Name: DIRECTIONALITY_EUROPEAN_NUMBER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 3
+Field Name: DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 4
+Field Name: DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 5
+Field Name: DIRECTIONALITY_ARABIC_NUMBER
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 6
+Field Name: DIRECTIONALITY_COMMON_NUMBER_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 7
+Field Name: DIRECTIONALITY_NONSPACING_MARK
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 8
+Field Name: DIRECTIONALITY_BOUNDARY_NEUTRAL
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 9
+Field Name: DIRECTIONALITY_PARAGRAPH_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 10
+Field Name: DIRECTIONALITY_SEGMENT_SEPARATOR
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 11
+Field Name: DIRECTIONALITY_WHITESPACE
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 12
+Field Name: DIRECTIONALITY_OTHER_NEUTRALS
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 13
+Field Name: DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 14
+Field Name: DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 15
+Field Name: DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 16
+Field Name: DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 17
+Field Name: DIRECTIONALITY_POP_DIRECTIONAL_FORMAT
+Field Type: byte
+Field Modifiers: public static final
+Field Value: 18
+Field Name: MIN_HIGH_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MAX_HIGH_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MIN_LOW_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MAX_LOW_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MIN_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MAX_SURROGATE
+Field Type: char
+Field Modifiers: public static final
+Field Value: ?
+Field Name: MIN_SUPPLEMENTARY_CODE_POINT
+Field Type: int
+Field Modifiers: public static final
+Field Value: 65536
+Field Name: MIN_CODE_POINT
+Field Type: int
+Field Modifiers: public static final
+Field Value: 0
+Field Name: MAX_CODE_POINT
+Field Type: int
+Field Modifiers: public static final
+Field Value: 1114111
+Field Name: value
+Field Type: char
+Field Modifiers: private final
+Field Value: s
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: 3786198910865385080
+Field Name: SIZE
+Field Type: int
+Field Modifiers: public static final
+Field Value: 16
+Field Name: BYTES
+Field Type: int
+Field Modifiers: public static final
+Field Value: 2
+Field Name: $assertionsDisabled
+Field Type: boolean
+Field Modifiers: static final
+Field Value: true
+
+******NEW CLASS******
+Class: java.lang.Class
+Direct Superclass: java.lang.Object
+Interfaces:
+java.io.Serializable
+java.lang.reflect.GenericDeclaration
+java.lang.reflect.Type
+java.lang.reflect.AnnotatedElement
+
+***Methods***
+
+Method Name: checkPackageAccess
+Exceptions: 
+Parameter Types: 
+java.lang.ClassLoader
+boolean
+Return Type: void
+Modifiers: private
+Method Name: forName
+Exceptions: 
+java.lang.ClassNotFoundException
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.Class
+Modifiers: public static
+Method Name: forName
+Exceptions: 
+java.lang.ClassNotFoundException
+Parameter Types: 
+java.lang.String
+boolean
+java.lang.ClassLoader
+Return Type: java.lang.Class
+Modifiers: public static
+Method Name: forName0
+Exceptions: 
+java.lang.ClassNotFoundException
+Parameter Types: 
+java.lang.String
+boolean
+java.lang.ClassLoader
+java.lang.Class
+Return Type: java.lang.Class
+Modifiers: private static native
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: getProtectionDomain
+Exceptions: 
+Parameter Types: 
+Return Type: java.security.ProtectionDomain
+Modifiers: public
+Method Name: isAssignableFrom
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: boolean
+Modifiers: public native
+Method Name: isInstance
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public native
+Method Name: getModifiers
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public native
+Method Name: isInterface
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public native
+Method Name: isArray
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public native
+Method Name: isPrimitive
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public native
+Method Name: getSuperclass
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: public native
+Method Name: getComponentType
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: public native
+Method Name: getName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: registerNatives
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: private static native
+Method Name: access$100
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+boolean
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: static
+Method Name: access$200
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Field;
+java.lang.String
+Return Type: java.lang.reflect.Field
+Modifiers: static
+Method Name: access$300
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.Object;
+[Ljava.lang.Object;
+Return Type: boolean
+Modifiers: static
+Method Name: access$402
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: boolean
+Modifiers: static
+Method Name: access$502
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: boolean
+Modifiers: static
+Method Name: addAll
+Exceptions: 
+Parameter Types: 
+java.util.Collection
+[Ljava.lang.reflect.Field;
+Return Type: void
+Modifiers: private static
+Method Name: annotationData
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class$AnnotationData
+Modifiers: private
+Method Name: argumentTypesToString
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.Class;
+Return Type: java.lang.String
+Modifiers: private static
+Method Name: arrayContentsEq
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.Object;
+[Ljava.lang.Object;
+Return Type: boolean
+Modifiers: private static
+Method Name: asSubclass
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: java.lang.Class
+Modifiers: public
+Method Name: cannotCastMsg
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: java.lang.String
+Modifiers: private
+Method Name: casAnnotationType
+Exceptions: 
+Parameter Types: 
+sun.reflect.annotation.AnnotationType
+sun.reflect.annotation.AnnotationType
+Return Type: boolean
+Modifiers: 
+Method Name: cast
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: java.lang.Object
+Modifiers: public
+Method Name: checkInitted
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: private static
+Method Name: checkMemberAccess
+Exceptions: 
+Parameter Types: 
+int
+java.lang.Class
+boolean
+Return Type: void
+Modifiers: private
+Method Name: copyConstructors
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Constructor;
+Return Type: [Ljava.lang.reflect.Constructor;
+Modifiers: private static
+Method Name: copyFields
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Field;
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: private static
+Method Name: copyMethods
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Method;
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: private static
+Method Name: createAnnotationData
+Exceptions: 
+Parameter Types: 
+int
+Return Type: java.lang.Class$AnnotationData
+Modifiers: private
+Method Name: desiredAssertionStatus
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: desiredAssertionStatus0
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: boolean
+Modifiers: private static native
+Method Name: enumConstantDirectory
+Exceptions: 
+Parameter Types: 
+Return Type: java.util.Map
+Modifiers: 
+Method Name: getAnnotatedInterfaces
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.AnnotatedType;
+Modifiers: public
+Method Name: getAnnotatedSuperclass
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.reflect.AnnotatedType
+Modifiers: public
+Method Name: getAnnotation
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: java.lang.annotation.Annotation
+Modifiers: public
+Method Name: getAnnotationType
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.annotation.AnnotationType
+Modifiers: 
+Method Name: getAnnotations
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.annotation.Annotation;
+Modifiers: public
+Method Name: getAnnotationsByType
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: [Ljava.lang.annotation.Annotation;
+Modifiers: public
+Method Name: getCanonicalName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: getClassLoader
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.ClassLoader
+Modifiers: public
+Method Name: getClassLoader0
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.ClassLoader
+Modifiers: 
+Method Name: getClasses
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Class;
+Modifiers: public
+Method Name: getConstantPool
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.ConstantPool
+Modifiers: native
+Method Name: getConstructor
+Exceptions: 
+java.lang.NoSuchMethodException
+java.lang.SecurityException
+Parameter Types: 
+[Ljava.lang.Class;
+Return Type: java.lang.reflect.Constructor
+Modifiers: public transient
+Method Name: getConstructor0
+Exceptions: 
+java.lang.NoSuchMethodException
+Parameter Types: 
+[Ljava.lang.Class;
+int
+Return Type: java.lang.reflect.Constructor
+Modifiers: private
+Method Name: getConstructors
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Constructor;
+Modifiers: public
+Method Name: getDeclaredAnnotation
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: java.lang.annotation.Annotation
+Modifiers: public
+Method Name: getDeclaredAnnotationMap
+Exceptions: 
+Parameter Types: 
+Return Type: java.util.Map
+Modifiers: 
+Method Name: getDeclaredAnnotations
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.annotation.Annotation;
+Modifiers: public
+Method Name: getDeclaredAnnotationsByType
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: [Ljava.lang.annotation.Annotation;
+Modifiers: public
+Method Name: getDeclaredClasses
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.Class;
+Modifiers: public
+Method Name: getDeclaredClasses0
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Class;
+Modifiers: private native
+Method Name: getDeclaredConstructor
+Exceptions: 
+java.lang.NoSuchMethodException
+java.lang.SecurityException
+Parameter Types: 
+[Ljava.lang.Class;
+Return Type: java.lang.reflect.Constructor
+Modifiers: public transient
+Method Name: getDeclaredConstructors
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Constructor;
+Modifiers: public
+Method Name: getDeclaredConstructors0
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Constructor;
+Modifiers: private native
+Method Name: getDeclaredField
+Exceptions: 
+java.lang.NoSuchFieldException
+java.lang.SecurityException
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: getDeclaredFields
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: public
+Method Name: getDeclaredFields0
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: private native
+Method Name: getDeclaredMethod
+Exceptions: 
+java.lang.NoSuchMethodException
+java.lang.SecurityException
+Parameter Types: 
+java.lang.String
+[Ljava.lang.Class;
+Return Type: java.lang.reflect.Method
+Modifiers: public transient
+Method Name: getDeclaredMethods
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: public
+Method Name: getDeclaredMethods0
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: private native
+Method Name: getDeclaringClass
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: public
+Method Name: getDeclaringClass0
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: private native
+Method Name: getEnclosingClass
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: java.lang.Class
+Modifiers: public
+Method Name: getEnclosingConstructor
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: getEnclosingMethod
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: java.lang.reflect.Method
+Modifiers: public
+Method Name: getEnclosingMethod0
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Object;
+Modifiers: private native
+Method Name: getEnclosingMethodInfo
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class$EnclosingMethodInfo
+Modifiers: private
+Method Name: getEnumConstants
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Object;
+Modifiers: public
+Method Name: getEnumConstantsShared
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Object;
+Modifiers: 
+Method Name: getExecutableTypeAnnotationBytes
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Executable
+Return Type: [B
+Modifiers: static
+Method Name: getFactory
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.generics.factory.GenericsFactory
+Modifiers: private
+Method Name: getField
+Exceptions: 
+java.lang.NoSuchFieldException
+java.lang.SecurityException
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: getField0
+Exceptions: 
+java.lang.NoSuchFieldException
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.reflect.Field
+Modifiers: private
+Method Name: getFields
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: public
+Method Name: getGenericInfo
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.generics.repository.ClassRepository
+Modifiers: private
+Method Name: getGenericInterfaces
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Type;
+Modifiers: public
+Method Name: getGenericSignature0
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: private native
+Method Name: getGenericSuperclass
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.reflect.Type
+Modifiers: public
+Method Name: getInterfaces
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Class;
+Modifiers: public
+Method Name: getInterfaces0
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Class;
+Modifiers: private native
+Method Name: getMethod
+Exceptions: 
+java.lang.NoSuchMethodException
+java.lang.SecurityException
+Parameter Types: 
+java.lang.String
+[Ljava.lang.Class;
+Return Type: java.lang.reflect.Method
+Modifiers: public transient
+Method Name: getMethod0
+Exceptions: 
+Parameter Types: 
+java.lang.String
+[Ljava.lang.Class;
+boolean
+Return Type: java.lang.reflect.Method
+Modifiers: private
+Method Name: getMethods
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: public
+Method Name: getName0
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: private native
+Method Name: getPackage
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Package
+Modifiers: public
+Method Name: getPrimitiveClass
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.Class
+Modifiers: static native
+Method Name: getProtectionDomain0
+Exceptions: 
+Parameter Types: 
+Return Type: java.security.ProtectionDomain
+Modifiers: private native
+Method Name: getRawAnnotations
+Exceptions: 
+Parameter Types: 
+Return Type: [B
+Modifiers: native
+Method Name: getRawTypeAnnotations
+Exceptions: 
+Parameter Types: 
+Return Type: [B
+Modifiers: native
+Method Name: getReflectionFactory
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.ReflectionFactory
+Modifiers: private static
+Method Name: getResource
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: java.net.URL
+Modifiers: public
+Method Name: getResourceAsStream
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: java.io.InputStream
+Modifiers: public
+Method Name: getSigners
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.Object;
+Modifiers: public native
+Method Name: getSimpleBinaryName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: private
+Method Name: getSimpleName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: getTypeName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: getTypeParameters
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.TypeVariable;
+Modifiers: public
+Method Name: isAnnotation
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: isAnnotationPresent
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+Return Type: boolean
+Modifiers: public
+Method Name: isAnonymousClass
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: isAsciiDigit
+Exceptions: 
+Parameter Types: 
+char
+Return Type: boolean
+Modifiers: private static
+Method Name: isEnum
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: isLocalClass
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: isLocalOrAnonymousClass
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: private
+Method Name: isMemberClass
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: isSynthetic
+Exceptions: 
+Parameter Types: 
+Return Type: boolean
+Modifiers: public
+Method Name: newInstance
+Exceptions: 
+java.lang.InstantiationException
+java.lang.IllegalAccessException
+Parameter Types: 
+Return Type: java.lang.Object
+Modifiers: public
+Method Name: newReflectionData
+Exceptions: 
+Parameter Types: 
+java.lang.ref.SoftReference
+int
+Return Type: java.lang.Class$ReflectionData
+Modifiers: private
+Method Name: privateGetDeclaredConstructors
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Constructor;
+Modifiers: private
+Method Name: privateGetDeclaredFields
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: private
+Method Name: privateGetDeclaredMethods
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: private
+Method Name: privateGetMethodRecursive
+Exceptions: 
+Parameter Types: 
+java.lang.String
+[Ljava.lang.Class;
+boolean
+java.lang.Class$MethodArray
+Return Type: java.lang.reflect.Method
+Modifiers: private
+Method Name: privateGetPublicFields
+Exceptions: 
+Parameter Types: 
+java.util.Set
+Return Type: [Ljava.lang.reflect.Field;
+Modifiers: private
+Method Name: privateGetPublicMethods
+Exceptions: 
+Parameter Types: 
+Return Type: [Ljava.lang.reflect.Method;
+Modifiers: private
+Method Name: reflectionData
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Class$ReflectionData
+Modifiers: private
+Method Name: resolveName
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: java.lang.String
+Modifiers: private
+Method Name: searchFields
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Field;
+java.lang.String
+Return Type: java.lang.reflect.Field
+Modifiers: private static
+Method Name: searchMethods
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.reflect.Method;
+java.lang.String
+[Ljava.lang.Class;
+Return Type: java.lang.reflect.Method
+Modifiers: private static
+Method Name: setSigners
+Exceptions: 
+Parameter Types: 
+[Ljava.lang.Object;
+Return Type: void
+Modifiers: native
+Method Name: toClass
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Type
+Return Type: java.lang.Class
+Modifiers: private static
+Method Name: toGenericString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+
+***Constructors***
+
+
+***Fields***
+
+Field Name: ANNOTATION
+Field Type: int
+Field Modifiers: private static final
+Field Value: 8192
+Field Name: ENUM
+Field Type: int
+Field Modifiers: private static final
+Field Value: 16384
+Field Name: SYNTHETIC
+Field Type: int
+Field Modifiers: private static final
+Field Value: 4096
+Field Name: cachedConstructor
+Field Type: java.lang.reflect.Constructor
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: newInstanceCallerCache
+Field Type: java.lang.Class
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: name
+Field Type: java.lang.String
+Field Modifiers: private transient
+Field Value: char
+Field Name: allPermDomain
+Field Type: java.security.ProtectionDomain
+Field Modifiers: private static
+Field Value: null
+Field Name: useCaches
+Field Type: boolean
+Field Modifiers: private static
+Field Value: true
+Field Name: reflectionData
+Field Type: java.lang.ref.SoftReference
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: classRedefinedCount
+Field Type: int
+Field Modifiers: private transient volatile
+Field Value: 0
+Field Name: genericInfo
+Field Type: sun.reflect.generics.repository.ClassRepository
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: 3206093459760846163
+Field Name: serialPersistentFields
+Field Type: [Ljava.io.ObjectStreamField;
+Field Modifiers: private static final
+Array Field Component Type: class java.io.ObjectStreamField
+Array Field Length: 0
+Field Value: 
+Field Name: reflectionFactory
+Field Type: sun.reflect.ReflectionFactory
+Field Modifiers: private static
+Field Value: sun.reflect.ReflectionFactory@5cb0d902
+Field Name: initted
+Field Type: boolean
+Field Modifiers: private static
+Field Value: true
+Field Name: enumConstants
+Field Type: [Ljava.lang.Object;
+Field Modifiers: private transient volatile
+Array Field Component Type: class java.lang.Object
+Array Field Length: 0
+Field Value: null
+Field Name: enumConstantDirectory
+Field Type: java.util.Map
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: annotationData
+Field Type: java.lang.Class$AnnotationData
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: annotationType
+Field Type: sun.reflect.annotation.AnnotationType
+Field Modifiers: private transient volatile
+Field Value: null
+Field Name: classValueMap
+Field Type: java.lang.ClassValue$ClassValueMap
+Field Modifiers: transient
+Field Value: null
+
+******NEW CLASS******
+Class: sun.reflect.ReflectionFactory
+Direct Superclass: java.lang.Object
+Interfaces:
+
+***Methods***
+
+Method Name: newConstructor
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+[Ljava.lang.Class;
+[Ljava.lang.Class;
+int
+int
+java.lang.String
+[B
+[B
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: newField
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+java.lang.String
+java.lang.Class
+int
+int
+java.lang.String
+[B
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: newMethod
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+java.lang.String
+[Ljava.lang.Class;
+java.lang.Class
+[Ljava.lang.Class;
+int
+int
+java.lang.String
+[B
+[B
+[B
+Return Type: java.lang.reflect.Method
+Modifiers: public
+Method Name: checkInitted
+Exceptions: 
+Parameter Types: 
+Return Type: void
+Modifiers: private static
+Method Name: copyConstructor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: copyField
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Field
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: copyMethod
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+Return Type: java.lang.reflect.Method
+Modifiers: public
+Method Name: getExecutableTypeAnnotationBytes
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Executable
+Return Type: [B
+Modifiers: public
+Method Name: getReflectionFactory
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.ReflectionFactory
+Modifiers: public static
+Method Name: newFieldAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Field
+boolean
+Return Type: sun.reflect.FieldAccessor
+Modifiers: public
+Method Name: getMethodAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+Return Type: sun.reflect.MethodAccessor
+Modifiers: public
+Method Name: newMethodAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+Return Type: sun.reflect.MethodAccessor
+Modifiers: public
+Method Name: setMethodAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+sun.reflect.MethodAccessor
+Return Type: void
+Modifiers: public
+Method Name: getConstructorAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: sun.reflect.ConstructorAccessor
+Modifiers: public
+Method Name: newConstructorAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: sun.reflect.ConstructorAccessor
+Modifiers: public
+Method Name: setConstructorAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+sun.reflect.ConstructorAccessor
+Return Type: void
+Modifiers: public
+Method Name: access$002
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: boolean
+Modifiers: static
+Method Name: access$102
+Exceptions: 
+Parameter Types: 
+int
+Return Type: int
+Modifiers: static
+Method Name: access$202
+Exceptions: 
+Parameter Types: 
+boolean
+Return Type: boolean
+Modifiers: static
+Method Name: inflationThreshold
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: static
+Method Name: langReflectAccess
+Exceptions: 
+Parameter Types: 
+Return Type: sun.reflect.LangReflectAccess
+Modifiers: private static
+Method Name: newConstructorForSerialization
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+java.lang.reflect.Constructor
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: setLangReflectAccess
+Exceptions: 
+Parameter Types: 
+sun.reflect.LangReflectAccess
+Return Type: void
+Modifiers: public
+
+***Constructors***
+
+
+***Fields***
+
+Field Name: initted
+Field Type: boolean
+Field Modifiers: private static
+Field Value: true
+Field Name: reflectionFactoryAccessPerm
+Field Type: java.security.Permission
+Field Modifiers: private static final
+Field Value: ("java.lang.RuntimePermission" "reflectionFactoryAccess")
+Field Name: soleInstance
+Field Type: sun.reflect.ReflectionFactory
+Field Modifiers: private static final
+Field Value: sun.reflect.ReflectionFactory@5cb0d902
+Field Name: langReflectAccess
+Field Type: sun.reflect.LangReflectAccess
+Field Modifiers: private static volatile
+Field Value: java.lang.reflect.ReflectAccess@1698c449
+Field Name: noInflation
+Field Type: boolean
+Field Modifiers: private static
+Field Value: false
+Field Name: inflationThreshold
+Field Type: int
+Field Modifiers: private static
+Field Value: 15
+
+******NEW CLASS******
+Class: java.lang.RuntimePermission
+Direct Superclass: java.security.BasicPermission
+Interfaces:
+
+***Methods***
+
+
+***Constructors***
+
+Parameter Types: 
+null
+Modifiers: public
+Parameter Types: 
+null
+null
+Modifiers: public
+
+***Fields***
+
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: 7399184964622342223
+
+******NEW CLASS******
+Class: java.security.BasicPermission
+Direct Superclass: java.security.Permission
+Interfaces:
+java.io.Serializable
+
+***Methods***
+
+Method Name: equals
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public
+Method Name: getCanonicalName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: final
+Method Name: init
+Exceptions: 
+Parameter Types: 
+java.lang.String
+Return Type: void
+Modifiers: private
+Method Name: readObject
+Exceptions: 
+java.io.IOException
+java.lang.ClassNotFoundException
+Parameter Types: 
+java.io.ObjectInputStream
+Return Type: void
+Modifiers: private
+Method Name: getActions
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: implies
+Exceptions: 
+Parameter Types: 
+java.security.Permission
+Return Type: boolean
+Modifiers: public
+Method Name: newPermissionCollection
+Exceptions: 
+Parameter Types: 
+Return Type: java.security.PermissionCollection
+Modifiers: public
+
+***Constructors***
+
+Parameter Types: 
+null
+null
+Modifiers: public
+Parameter Types: 
+null
+Modifiers: public
+
+***Fields***
+
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: 6279438298436773498
+Field Name: wildcard
+Field Type: boolean
+Field Modifiers: private transient
+Field Value: false
+Field Name: path
+Field Type: java.lang.String
+Field Modifiers: private transient
+Field Value: reflectionFactoryAccess
+Field Name: exitVM
+Field Type: boolean
+Field Modifiers: private transient
+Field Value: false
+
+******NEW CLASS******
+Class: java.security.Permission
+Direct Superclass: java.lang.Object
+Interfaces:
+java.security.Guard
+java.io.Serializable
+
+***Methods***
+
+Method Name: equals
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+Return Type: boolean
+Modifiers: public abstract
+Method Name: toString
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public
+Method Name: hashCode
+Exceptions: 
+Parameter Types: 
+Return Type: int
+Modifiers: public abstract
+Method Name: getName
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public final
+Method Name: getActions
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.String
+Modifiers: public abstract
+Method Name: implies
+Exceptions: 
+Parameter Types: 
+java.security.Permission
+Return Type: boolean
+Modifiers: public abstract
+Method Name: newPermissionCollection
+Exceptions: 
+Parameter Types: 
+Return Type: java.security.PermissionCollection
+Modifiers: public
+Method Name: checkGuard
+Exceptions: 
+java.lang.SecurityException
+Parameter Types: 
+java.lang.Object
+Return Type: void
+Modifiers: public
+
+***Constructors***
+
+Parameter Types: 
+null
+Modifiers: public
+
+***Fields***
+
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: -5636570222231596674
+Field Name: name
+Field Type: java.lang.String
+Field Modifiers: private
+Field Value: reflectionFactoryAccess
+
+******NEW CLASS******
+Class: java.lang.reflect.ReflectAccess
+Direct Superclass: java.lang.Object
+Interfaces:
+sun.reflect.LangReflectAccess
+
+***Methods***
+
+Method Name: newConstructor
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+[Ljava.lang.Class;
+[Ljava.lang.Class;
+int
+int
+java.lang.String
+[B
+[B
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: newField
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+java.lang.String
+java.lang.Class
+int
+int
+java.lang.String
+[B
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: newMethod
+Exceptions: 
+Parameter Types: 
+java.lang.Class
+java.lang.String
+[Ljava.lang.Class;
+java.lang.Class
+[Ljava.lang.Class;
+int
+int
+java.lang.String
+[B
+[B
+[B
+Return Type: java.lang.reflect.Method
+Modifiers: public
+Method Name: copyConstructor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: java.lang.reflect.Constructor
+Modifiers: public
+Method Name: copyField
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Field
+Return Type: java.lang.reflect.Field
+Modifiers: public
+Method Name: copyMethod
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+Return Type: java.lang.reflect.Method
+Modifiers: public
+Method Name: getExecutableTypeAnnotationBytes
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Executable
+Return Type: [B
+Modifiers: public
+Method Name: getMethodAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+Return Type: sun.reflect.MethodAccessor
+Modifiers: public
+Method Name: setMethodAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Method
+sun.reflect.MethodAccessor
+Return Type: void
+Modifiers: public
+Method Name: getConstructorAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: sun.reflect.ConstructorAccessor
+Modifiers: public
+Method Name: setConstructorAccessor
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+sun.reflect.ConstructorAccessor
+Return Type: void
+Modifiers: public
+Method Name: getConstructorAnnotations
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: [B
+Modifiers: public
+Method Name: getConstructorParameterAnnotations
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: [B
+Modifiers: public
+Method Name: getConstructorSignature
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: java.lang.String
+Modifiers: public
+Method Name: getConstructorSlot
+Exceptions: 
+Parameter Types: 
+java.lang.reflect.Constructor
+Return Type: int
+Modifiers: public
+
+***Constructors***
+
+
+***Fields***
+
+
+******NEW CLASS******
+Class: java.lang.String$CaseInsensitiveComparator
+Direct Superclass: java.lang.Object
+Interfaces:
+java.util.Comparator
+java.io.Serializable
+
+***Methods***
+
+Method Name: compare
+Exceptions: 
+Parameter Types: 
+java.lang.Object
+java.lang.Object
+Return Type: int
+Modifiers: public volatile
+Method Name: compare
+Exceptions: 
+Parameter Types: 
+java.lang.String
+java.lang.String
+Return Type: int
+Modifiers: public
+Method Name: readResolve
+Exceptions: 
+Parameter Types: 
+Return Type: java.lang.Object
+Modifiers: private
+
+***Constructors***
+
+
+***Fields***
+
+Field Name: serialVersionUID
+Field Type: long
+Field Modifiers: private static final
+Field Value: 8575799808933029326
+
