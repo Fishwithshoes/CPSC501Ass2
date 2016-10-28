@@ -1,0 +1,37 @@
+Extracted Method primitiveHandler() from displayClassFieldInfo()
+due to long method. New method will handle primitive value parsing
+and string generation.
+
+Extracted Method arrayHandler() from displayClassFieldInfo()
+due to long method. New method will handle array value parsing
+and string generation.
+
+Extracted Method objectHandler() from displayClassFieldInfo()
+due to long method. New method will handle objcet value parsing
+and string generation.
+
+Extracted Method boolHandler() from primitiveHandler() due to
+long method. New method will handle boolean value string generation.
+
+Extracted Method charHandler() from primitiveHandler() due to
+long method. New method will handle character value string 
+generation.
+
+Extracted Method byteHandler() from primitiveHandler() due to
+long method. New method will handle byte value string generation.
+
+Extracted Method shortHandler() from primitiveHandler() due to
+long method. New method will handle short value string generation.
+
+Extracted Method intHandler() from primitiveHandler() due to
+long method. New method will handle integer value string 
+generation.
+
+Extracted Method longHandler() from primitiveHandler() due to
+long method. New method will handle long value string generation.
+
+Extracted Method floatHandler() from primitiveHandler() due to
+long method. New method will handle float value string generation.
+
+Extracted Method shortHandler() from primitiveHandler() due to
+long method. New method will handle float value string generation.
