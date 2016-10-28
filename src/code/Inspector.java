@@ -92,36 +92,42 @@ public class Inspector {
 		System.out.println();
 	}
 	
-	/*public void displayClassFieldInfo(Class<?> currClass, Object currObject) {
-		Field [] fields = currClass.getDeclaredFields();
-		int fieldInt = new Integer(-1);
-		try {
-			fields[0].setAccessible(true);
-			fieldInt = fields[0].getInt(currObject);
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println("Int value: " + Integer.toString(fieldInt));
-	}*/
-	
 	public void displayClassFieldInfo(Class<?> currClass, Object currObject) {
 		Field [] fields = currClass.getDeclaredFields();
 		System.out.println("***Fields***");
 		System.out.println();
 		for (int i = 0; i < fields.length; i++) {
 			Class <?> fieldType = fields[i].getType();
+			String fieldName = fields[i].getName();
 			String fieldTypeString = fieldType.getName();
 			String modifiers = Modifier.toString(fields[i].getModifiers());
+			String arrayCompType = null;
+			int arrayFieldLength = 0;
 			String valueString = new String();
 			if (fieldType.isPrimitive()) {
 				valueString = primitiveHandler(fields[i], currObject);
 			}
 			else if (fieldType.isArray()){
-				//some Array Handling
+				Object arrayObject = new Object();
+				try {
+					fields[i].setAccessible(true);
+					arrayObject = fields[i].get(currObject);
+				} catch (IllegalArgumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if (arrayObject != null) {
+					arrayFieldLength = Array.getLength(arrayObject);
+					valueString = arrayHandler(arrayObject, currObject);
+				}
+				else {
+					valueString = null;
+				}
+				arrayCompType = fieldType.getComponentType().toString();
+
 			}
 			else if (fieldType.isEnum()) {
 				
@@ -130,9 +136,13 @@ public class Inspector {
 				valueString = objectHandler(fields[i], currObject);
 			}
 
-			
+			System.out.println("Field Name: " + fieldName);
 			System.out.println("Field Type: " + fieldTypeString);
 			System.out.println("Field Modifiers: " + modifiers);
+			if (fieldType.isArray()) {
+				System.out.println("Array Field Component Type: " + arrayCompType);
+				System.out.println("Array Field Length: " + Integer.toString(arrayFieldLength));
+			}
 			System.out.println("Field Value: " + valueString);
 		}
 		System.out.println();
@@ -171,6 +181,19 @@ public class Inspector {
 
 		return resultString;
 		
+	}
+	
+	public String arrayHandler(Object array, Object currObject) {
+		String resultString = "";
+		for (int i = 0; i < Array.getLength(array); i++) {
+			Object valueAtI = Array.get(array, i);
+			if (valueAtI == null)
+				resultString = resultString + "null ";
+			else
+				resultString = resultString + valueAtI.toString() + " ";
+		}
+		
+		return resultString;
 	}
 	
 	public String objectHandler(Field currField, Object currObject) {
@@ -321,46 +344,6 @@ public class Inspector {
 		String doubleString = Double.toString(returnValue);
 		return doubleString;
 	}
-	
-	/*public String getFieldValue(Field currField, Class<?> currObject) {
-		currField.setAccessible(true);
-		String valueString = new String();
-		Class <?> fieldType = currField.getType();
-		Object fieldObject = new Object();
-
-		if (fieldType.isPrimitive() == true) {
-			try {
-				fieldObject = currField.get(currOfieldObject);
-			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			
-		}
-		else if (fieldType.isArray() == true) {
-			
-		}
-		else if (fieldType.isEnum() == true){
-			
-		}
-		else {												//is object
-			try {
-				fieldObject = fieldType.newInstance();
-			} catch (InstantiationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			valueString = fieldObject.toString();
-		}
-		return valueString;
-	}*/
 	
 	public void displaySuperClass(Object currObject, Class<?> currClass, HashMap<Class<?>, Integer> currMap) {
 		Class <?> superClass = currClass.getSuperclass();

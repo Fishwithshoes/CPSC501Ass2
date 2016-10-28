@@ -14,7 +14,8 @@ public class TestClass1 {
 	//static TestClass2 testObject1 = new TestClass2();
 	//TestClass2 testObject2 = new TestClass2();
 	TestClass4 testObject3 = new TestClass4();
-	private TestClass4[] testClassArray1 = {testObject3, testObject3};
+	TestClass4 testObject4 = new TestClass4();
+	private TestClass4[] testClassArray1 = {null, testObject4};
 	private String [] testStringArray1 = {"shoop", "deboop"};
 	
 	public TestClass1() {
